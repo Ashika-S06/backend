@@ -1,3 +1,5 @@
+const path = require('path');
+require('dotenv').config({ path: path.join(__dirname, '../../.env'), override: true });
 const User = require('../models/User');
 const jwt = require('jsonwebtoken');
 
